@@ -1,0 +1,37 @@
+mkdir /tmp/pettta
+cp data.txt /tmp/pettta
+cd /tmp/pettta
+
+file data.txt
+xxd -r data.txt newFile
+file newFile
+
+mv newFile newFile.gz
+gzip -d newFile.gz
+file newFile
+
+mv newFile newFile.bz2
+bzip2 -d newFile.bz2
+file newFile
+
+mv newFile newFile.gz
+gzip -d newFile.gz
+file newFile
+
+tar -xvf newFile
+file data5.bin
+
+tar -xvf data5.bin
+file data6.bin
+
+mv data6.bin data6.bz2
+bzip2 -d data6.bz2
+file data6
+
+tar -xvf data6
+file data8.bin
+
+mv data8.bin data9.gz 
+file data9
+
+cat data9
