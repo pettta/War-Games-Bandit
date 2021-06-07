@@ -1,0 +1,7 @@
+man nmap
+nmap -v -A -T4 -p 31000-32000 localhost
+
+openssl s_client -connect localhost:31790
+cluFn7wTiGryunymYOu4RcffSxQluehd
+
+
